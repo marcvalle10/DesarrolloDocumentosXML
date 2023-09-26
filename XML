@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE partido [
+<!ELEMENT partido (informacion, resultado, goles+)>
+<!ELEMENT informacion (fecha, equipos)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT equipos (equipo+)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT resultado (equipo, marcador)>
+<!ELEMENT marcador (goles)>
+<!ELEMENT goles (jugador, minuto)>
+<!ELEMENT jugador (#PCDATA)>
+<!ELEMENT minuto (#PCDATA)>
+]>
+<partido>
+  <informacion>
+    <fecha>2023-09-19</fecha>
+    <equipos>
+      <equipo>EquipoLocal</equipo>
+      <equipo>EquipoVisitante</equipo>
+    </equipos>
+  </informacion>
+  <resultado>
+    <equipo>EquipoLocal</equipo>
+    <marcador>
+      <goles>3</goles>
+    </marcador>
+  </resultado>
+  <resultado>
+    <equipo>EquipoVisitante</equipo>
+    <marcador>
+      <goles>2</goles>
+    </marcador>
+  </resultado>
+  <goles>
+    <jugador>Goleador1</jugador>
+    <minuto>45</minuto>
+  </goles>
+  <goles>
+    <jugador>Goleador2</jugador>
+    <minuto>69</minuto>
+  </goles>
+  <goles>
+    <jugador>Goleador3</jugador>
+    <minuto>90</minuto>
+  </goles>
+  <goles>
+    <jugador>Goleador4</jugador>
+    <minuto>56</minuto>
+  </goles>
+</partido>
